@@ -6,10 +6,10 @@ scanf("%d", &max);
 int min;
 scanf("%d", &min);
 int temp=0;
-if(max<min)
+if(max<min){
 temp=max;
 max=min;
-min=temp;
+min=temp;}
 int ans=0;
 printf("The Armstrong numbers are: ");
 for (int i=min;i<max;i++){
@@ -22,7 +22,7 @@ if (ans==1)
     printf("%d",max);
 printf("\n");
 
-printf("The Palindrome numbers are: ");
+printf("The Palindrome are: ");
 for (int i=min;i<max;i++){
 ans = isPalindrome(i);
   if  (ans==1){
